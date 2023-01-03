@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World 1000</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<script type="text/javascript" src="upperCase.js"></script>
 
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <input type="submit" value="Submit">
-</form>
+<head>
+</head>
+
+<body>
+    <h1>Hello World 1000</h1>
+    <p>I'm hosted with GitHub Pages.</p>
+
+    <form>
+        <label for="strIn">Input Text:</label><br>
+        <input type="text" id="strIn" name="strIn" value="Hello World!"><br>
+        <input type="button" onclick="toUpper(document.getElementById('strIn').value)" value="Display">
+    </form>
 
 </body>
+
 </html>
-<!-- <script type="text/javascript" src="config.js"></script> -->
+<!-- <script type="text/javascript" src="upperCase.js"></script> -->
