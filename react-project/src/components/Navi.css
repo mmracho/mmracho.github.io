@@ -1,0 +1,25 @@
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+a:active {
+    opacity: 0.5;
+}
+
+.navStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    background-color: rgb(90, 66, 197);
+}
