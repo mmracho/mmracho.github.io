@@ -1,35 +1,35 @@
+import React, { Component } from 'react';
 import './Navi.css';
+import MenuItems from './MenuItems';
+import { Button } from './Button';
 
-const menuItems = ["Home", "Projects", "Original Site", "About", "Contact"];
+class Navi extends Component 
+{
+    state = { clicked: false }
+    handeleClicked = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
 
-function createMenu(title, url) {
-    return {
-        title: title,
-        url: url,
-        get getTitle() {
-            return this.title;
-        },
-        get getUrl() {
-            return this.url
-        }
-    };
-}
-const popMenuList = items => (
-    items.map((x) => createMenu(x, ' '))
-)
-
-const Navi = () => (
+    render = () => (
     <nav>
-        <ul className="navStyle">
+        <div className="menuIcon" onClick={this.handeleClicked}>
+            <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        </div>
+        <ul className={this.state.clicked ? 'navStyle active' : 'navStyle' }>
             {
-                popMenuList(menuItems).map((item, index) => {
+                MenuItems().map((item, index) => {
                     return (
-                        <li><a href={item.getUrl}>{item.getTitle}</a></li>
+                        <li key={index}><a href={item.getUrl}>{item.getTitle}</a></li>
                     )
                 })
             }
         </ul>
+        {/* <Button></Button> */}
     </nav>
-);
+    );
+}
+
 
 export default Navi;
+
+// 32
