@@ -1,5 +1,5 @@
 # mmracho.github.io
-# What do I put here?
+work in progress.
 
-Visit:
+# Visit:
 https://mmracho.github.io/
