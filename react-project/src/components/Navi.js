@@ -3,8 +3,7 @@ import './Navi.css';
 import MenuItems from './MenuItems';
 import { Button } from './Button';
 
-class Navi extends Component 
-{
+class Navi extends Component {
     state = { clicked: false }
     handeleClicked = () => {
         this.setState({ clicked: !this.state.clicked })
@@ -19,7 +18,7 @@ class Navi extends Component
             {
                 MenuItems().map((item, index) => {
                     return (
-                        <li key={index}><a href={item.getUrl}>{item.getTitle}</a></li>
+                        <li key={index}><a className={item.getCname} href={item.getUrl}>{item.getTitle}</a></li>
                     )
                 })
             }

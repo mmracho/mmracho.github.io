@@ -1,19 +1,24 @@
-a:link, a:visited {
-    text-decoration: none;
-    color: black;
-    transition: all 0.2s ease-out;
-  }
 
-a:hover, a:active {
+
+.cnameMenuitem {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-out;
+}
+
+.cnameMenuitem:hover {
+    text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: #EFF1F3;
     border-radius: 4px;
     padding: 0.5rem 1rem;
 }
 
+
 .navStyle {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #DBD3D8;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 300;
+    background: black;
     padding: 1%;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -23,6 +28,7 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
     font-size:1.5rem;
+    height: 3rem;
 
 }
 
@@ -31,26 +37,28 @@ a:hover, a:active {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 720px) {
     .navStyle {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         height: auto;
         position: absolute;
-        padding: 20px 0px;
         top: 80px;
-        right: -120%;
-        opacity: 1;
-        transition: all 0.2s ease;
+        opacity: 0;
+        transition: all 0.5s ease;
         border-radius: 4px;
+        z-index: 0;
     }
 
     .navStyle.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
-        right: 5%;
     }
 
     .menuIcon {
@@ -62,6 +70,7 @@ a:hover, a:active {
         right: 0;
         transform: translate(-80%, 50%);
         cursor: pointer;
+        z-index: 1;
     }
 
     .menuIcon:hover, .menuIcon:active {
