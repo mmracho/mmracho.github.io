@@ -21,7 +21,7 @@ function Game() {
             setPickMode(changeEvent)
         } else if (levelJLPT.length === 0 && pickKanji.length !== 0) {
             // MODIFY ALERT LATER
-            alert("SELECT LEVEL")
+            alert("Please select at least one from the options.")
         } else if (levelJLPT.length !== 0 && pickKanji.length === 0) {
             setIsChecked(!isChecked)
             setPickMode(changeEvent)
