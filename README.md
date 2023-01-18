@@ -2,6 +2,8 @@
 I created this project for the purpose of practicing programming and 
 to make a fun app to test my own Japanese Vocabulary.
 
+https://mmracho.github.io/
+
 Future plans on the app:
 -> Clean vocabulary list
 -> Better selection/input method for answering
