@@ -11,4 +11,5 @@ Future plans on the app:
 -> Scoreboard
 -> Better meaning list
 
+Used Create React App for my base.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
